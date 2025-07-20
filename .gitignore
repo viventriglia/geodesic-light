@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+lib/
+lib64/
+var/
+wheels/
+share/python-wheels/
+.installed.cfg
+pytecgg-rs/target/
+
+# Environments
+.env
+.env.secret
+.venv
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Cython debug symbols
+cython_debug/
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+
+# Markdown
+# *.md
+# !README.md
