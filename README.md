@@ -21,7 +21,9 @@ We can achieve something even more spectacular by increasing the photons to arou
 ## Relativistic Astrophysics background (geeky section 🤓)
 
 Using geometrised units, $c=G=1$, the [Kerr metric](https://www.roma1.infn.it/teongrav/onde19_20/kerr.pdf) in Boyer-Lindquist coordinates is written as
-$$\mathrm{d}s^{2}=-\left(1-\frac{2Mr}{\Sigma}\right) \mathrm{d}t^{2}-\frac{4aMr\sin^{2}\theta}{\Sigma} \mathrm{d}t \mathrm{d}\phi+\frac{\Sigma}{\Delta} \mathrm{d}r^{2}+\Sigma \mathrm{d}\theta^{2}+\left(r^{2}+a^{2}+\frac{2a^{2}Mr\sin^{2}\theta}{\Sigma}\right) \sin^{2}\theta \mathrm{d}\phi^{2},$$
+```math
+\mathrm{d}s^{2}=-\left(1-\frac{2Mr}{\Sigma}\right) \mathrm{d}t^{2}-\frac{4aMr\sin^{2}\theta}{\Sigma} \mathrm{d}t \mathrm{d}\phi+\frac{\Sigma}{\Delta} \mathrm{d}r^{2}+\Sigma \mathrm{d}\theta^{2}+\left(r^{2}+a^{2}+\frac{2a^{2}Mr\sin^{2}\theta}{\Sigma}\right) \sin^{2}\theta \mathrm{d}\phi^{2},
+```
 where $\Sigma\equiv r^2 + a^2 \cos^2 \theta$ and $\Delta\equiv r^2 - 2Mr + a^2$. For simplicity, we will set also $M=1$.
 
 ### Initial conditions
