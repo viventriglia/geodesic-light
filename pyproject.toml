@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "geodesic-light"
+version = "0.1.0"
+description = "Ray-tracing photons in a black-hole spacetime of General Relativity"
+authors = ["Vincenzo <vincenzo.ventriglia@outlook.com>"]
+packages = [{include = "geodesic_light"}]
+license = "General Public License v3 (GPLv3)"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^2.1.0"
+numba = "^0.61"
+scipy = "^1.15"
+matplotlib = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
