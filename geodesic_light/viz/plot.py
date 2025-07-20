@@ -1,6 +1,3 @@
-from typing import List, Dict, Tuple
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
@@ -28,8 +25,8 @@ def save_plot(fig: Figure, filename: str, dpi: int = 300) -> None:
 
 
 def _create_figure(
-    xlim: Tuple[float, float], ylim: Tuple[float, float]
-) -> Tuple[Figure, Axes]:
+    xlim: tuple[float, float], ylim: tuple[float, float]
+) -> tuple[Figure, Axes]:
     """Create and configure the figure and axes"""
     fig = plt.figure(figsize=(12, 12), facecolor="#020a17")
     ax = fig.add_subplot(111, facecolor="#020a17")
@@ -40,7 +37,7 @@ def _create_figure(
     return fig, ax
 
 
-def _plot_rays(ax: Axes, rays: List[Dict], lw: float) -> None:
+def _plot_rays(ax: Axes, rays: list[dict], lw: float) -> None:
     """Plot individual rays with color based on their physical (winding) properties"""
     for ray in rays:
         phi = abs(ray["solver"].y[2, -1])
@@ -91,11 +88,11 @@ def _plot_photon_rings(ax: Axes, M: float, a: float) -> None:
 
 
 def plot_ray_tracing(
-    rays: List[Dict],
+    rays: list[dict],
     M: float,
     a: float,
-    xlim: Tuple[float, float] = (-10, 10),
-    ylim: Tuple[float, float] = (-10, 10),
+    xlim: tuple[float, float] = (-10, 10),
+    ylim: tuple[float, float] = (-10, 10),
     lw: float = 0.1,
 ) -> Figure:
     """

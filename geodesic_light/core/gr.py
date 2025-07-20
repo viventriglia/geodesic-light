@@ -1,6 +1,5 @@
 import numpy as np
 from numba import njit
-from scipy.integrate import odeint, solve_ivp
 
 
 def initial_conditions(alpha, beta, r0, theta0, phi0, a):
